@@ -1,0 +1,118 @@
+/* RESET BONITINHO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #f5f6fa;
+  padding: 40px;
+}
+
+/* CONTAINER PRINCIPAL */
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 26px;
+  color: #2c3e50;
+}
+
+/* FORM */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CAMPOS */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* INPUTS BONITOS */
+input,
+select,
+textarea {
+  padding: 12px 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1.5px solid #dcdde1;
+  outline: none;
+  transition: 0.2s;
+  background: #fafafa;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #6c5ce7;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.15);
+}
+
+/* TEXTAREA */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* RADIO BUTTONS */
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* BOTÃO */
+button {
+  padding: 14px;
+  background: #6c5ce7;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #5a4dd1;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* ANIMAÇÃO LEVE */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
